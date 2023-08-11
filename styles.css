@@ -2,14 +2,18 @@
 
 :root {
     --bg_color: rgb(20, 20, 20);
+    --poiret: 'Poiret One', cursive;
 }
+
 body {
     background-color: var(--bg_color);
 }
+
 .dark-bg {
     width: 100%;
     background-color: var(--bg_color);
 }
+
 .fnv-logo {
     background-image: url("img/fnv_logo.jpg");
     margin: auto;
@@ -20,18 +24,47 @@ body {
     height: 500px;
     border-radius: 25%;
 }
+
 .img-container {
     width: 100%;
     background-color: var(--bg_color);
+}
+
+.bio {
+    font-family: var(--poiret);
+    color: whitesmoke;
+    width: 50%;
+    margin: auto;
+    opacity: .9;
+    padding-bottom: 15px;
+}
+
+.audio-title {
+    font-family: var(--poiret);
+    color: whitesmoke;
+    text-align: center;
+    opacity: .9;
+    font-size: 1.2em;
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+}
+
+.audio-container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .16;
+    margin-bottom: 25px;
 }
 
 .db-img {
     border-radius: 10%;
     margin: auto;
     display: block;
-    width: 90%;
+    width: 655px;
 }
-/* Style all font awesome icons */
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -49,28 +82,24 @@ body {
 }
 
 .socials-title {
-    color: white;
+    color: whitesmoke;
     text-align: center;
     margin-bottom: 0;
     letter-spacing: 0.3em;
-    font-family: 'Poiret One', cursive;
+    font-family: var(--poiret);
     font-size: .7em;
     opacity: .7;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
-
-/* Facebook */
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
-/* Instagram */
+
 .fa-instagram {
     background: #f09433; 
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
@@ -80,10 +109,28 @@ body {
         color: white;
 }
   
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 675px){
     .fnv-logo{
         background-image: url("img/fnv_logo_mobile.jpg");
         width: 300px;
         height: 300px;
+    }
+    .db-img{
+        width: 90%;
+    }
+    .bio{
+        width: 90%;
+        font-size: .8em;
+        padding-bottom: 5px;
+    }
+    .socials-title{
+        font-size: .6em;
+    }
+    .audio-container{
+        margin-bottom: 10px;
+    }
+    .audio-title{
+        margin-bottom: 2px;
+        font-size: 1em;
     }
 }
