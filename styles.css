@@ -1,7 +1,6 @@
 :root {
     --bg_color: rgb(20, 20, 20);
 }
-
 .header {
     width: 100%;
     background-color: var(--bg_color);
@@ -10,7 +9,7 @@
     background-image: url("img/fnv_logo.jpg");
     margin: auto;
     display: block;
-    opacity: 1;
+    opacity: .85;
     box-shadow: 0 0 2em 2em var(--bg_color) inset;
     width: 500px;
     height: 500px;
@@ -20,7 +19,7 @@
     width: 100%;
     background-color: var(--bg_color);
 }
-.main-img {
+/* .main-img {
     background-image: url("img/fnv_divine_barrel.jpg");
     margin: auto;
     display: block;
@@ -29,5 +28,17 @@
     max-width: 655px;
     height: 642px;
     border-radius: 10%;
-    background-repeat: no-repeat;
+} */
+.db-img {
+    border-radius: 10%;
+    margin: auto;
+    display: block;
+    width: 90%;
+}
+@media only screen and (max-width: 500px){
+    .fnv-logo{
+        background-image: url("img/fnv_logo_mobile.jpg");
+        width: 300px;
+        height: 300px;
+    }
 }
